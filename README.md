@@ -1,5 +1,11 @@
 # Getting Started
 
+This project talks about publishing messages on Notice boards. Here we have 2 notice boards:
+1. Teachers Notice Board : Only teachers can post any messages on it.
+2. Students Notice Board : Only students and teachers can post notice on it.
+
+It is not recommented to publish and consume a message from the same topic in an application since it from cyclic dependency so messages are ready to be consumed before they are published. So, we will take help of Kafka CLI in order to produce and consume messages from the application.
+
 ### Steps to create a topic using Kafka CLI:
 
 1. To start zookeeper & Kafka server in docker container run following command:
