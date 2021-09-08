@@ -1,0 +1,18 @@
+server:
+  port: 9001
+
+spring:
+  cloud:
+    stream:
+#      bindings:
+#        teacher-notice-board:
+#          destination: notice-board
+      kafka:
+        binder:
+          brokers: localhost:9092
+          auto-create-topics: true
+#          configuration:
+#            security:
+#              protocol: SSL
+#            ssl.truststore.location: /Users/nainajaiswal/Desktop/kafka.client.truststore.jks
+
